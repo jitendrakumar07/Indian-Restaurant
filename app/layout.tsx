@@ -1,20 +1,23 @@
-import type { Metadata } from 'next'
-import './globals.css'
+// app/layout.tsx
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import "./globals.css";
 
-export const metadata: Metadata = {
-  title: 'Nizams Indian Restaurant',
-  description: 'Nizam s Indian Restaurant',
-  generator: 'Next.js',
-}
+export const metadata = {
+  title: "Nizams Indian Restaurant",
+  description: "Taste The Royal Flavors",
+};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+import { ReactNode } from "react";
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="min-h-screen bg-cream-50">
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
