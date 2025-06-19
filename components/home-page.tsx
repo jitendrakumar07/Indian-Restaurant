@@ -54,7 +54,7 @@ export default function HomePage() {
             <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-red-900 font-semibold text-lg px-8 py-3">
               <Link href="/menu">View Menu</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-900 font-semibold text-lg px-8 py-3">
+            <Button asChild size="lg" variant="outline" className="border-white text-orange-300 hover:bg-yellow-400 hover:text-red-900 font-semibold text-lg px-8 py-3">
               <Link href="/order">Order Now</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-red-900 font-semibold text-lg px-8 py-3">
